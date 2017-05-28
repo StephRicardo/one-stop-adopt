@@ -1,9 +1,10 @@
-This is our user's index view!! User landing page!!
+<h1>All users</h1>
 
-<ul>
+<ul class="users">
 	<% @users.each do |user| %>
 		<li>
-			<%= "#{user.first_name} #{user.last_name}" %>
+			<%= gravatar_for user, size: 50 %>
+      <%= link_to "#{user.first_name} #{user.last_name}", user %>
 		</li>
 	<% end %>
 </ul>
