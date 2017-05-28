@@ -5,7 +5,6 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
-		# puts @user.session
 	end
 
 	# For registering to the site
@@ -21,9 +20,6 @@ class UsersController < ApplicationController
     else
       render 'new'
     end 
-     # @user = User.create(user_params)
-    #  log_in @user
-  	 # redirect_to @user
   end
 
   private
