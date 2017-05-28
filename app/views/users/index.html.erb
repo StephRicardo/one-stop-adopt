@@ -1,7 +1,11 @@
 This is our user's index view!! User landing page!!
 
 <ul>
-<% @users.each do |user| %>
-	<li><%= "#{user.first_name} #{user.last_name} #{user.email}" %></li>
-<% end %>
+	<% @users.each do |user| %>
+		<li>
+			<%= "#{user.first_name} #{user.last_name}" %>
+		</li>
+	<% end %>
 </ul>
+
+<%= link_to "Log out", logout_path, method: :delete %>

@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
-		puts @user.session
+		# puts @user.session
 	end
 
 	# For registering to the site
@@ -15,7 +15,8 @@ class UsersController < ApplicationController
 
   def create
   	 @user = User.create(user_params)
-  	 redirect_to users_path
+     log_in @user
+  	 redirect_to @user
   end
 
   private

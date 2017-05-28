@@ -22,7 +22,7 @@ users = [
 	{
 		:first_name => "Stephanie",
 		:last_name => "Ricardo",
-		:email => "stephanie.ricardo1.com",
+		:email => "stephanie.ricardo1@gmail.com",
 		:password => "1234"
 	}
 ]
