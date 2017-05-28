@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   delete '/logout' =>'sessions#destroy'
 
   get '/about' => 'static#about'
+
+	# This will be removed when the users#index and accompanying features are added
+	# If we use user#index, we need to include a link to that page in the nav bar
+  get '/users' => 'users#new'
   
   resources :users
 
