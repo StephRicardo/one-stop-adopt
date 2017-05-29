@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem "rails-erd", :group => :development
 gem 'jquery-rails', '~> 4.3.1'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '3.1.11'
