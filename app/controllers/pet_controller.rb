@@ -1,6 +1,7 @@
 class PetController < ApplicationController
 	def index
-		# @pets = Pet.paginate(page: params[:page])
+		Pet.save_api_data
+		@pets = Pet.paginate(page: params[:page])
 	end
 
 	def show

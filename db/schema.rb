@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170529144536) do
+ActiveRecord::Schema.define(version: 20170529202127) do
 
   create_table "pets", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(version: 20170529144536) do
     t.text "description"
     t.string "email"
     t.string "animal"
+    t.string "photo"
+    t.string "breed"
   end
 
   create_table "selected_pets", force: :cascade do |t|
