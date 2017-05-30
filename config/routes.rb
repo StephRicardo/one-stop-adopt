@@ -14,8 +14,8 @@ Rails.application.routes.draw do
 	# If we use user#index, we need to include a link to that page in the nav bar
   get '/users' => 'users#new'
 
-  get '/pets' => 'pet#index'
-  get '/pets/details' => 'pet#show'
+  get '/pets' => 'pets#index'
+  get '/pets/:id' => 'pets#show'
   
   resources :users
 

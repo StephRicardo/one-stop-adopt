@@ -1,0 +1,32 @@
+<h1>Pet Details</h1>
+
+<div class="row">
+  <section class="user_info">
+    <h2>
+    	<%= image_tag("#{@pet.photo}", :size => "500x500", :crop => :fill) %>
+      <%= @pet.name %>
+    </h2>
+  </section>
+
+  <section>
+  	<h3>Pet Details</h3>
+  	<%= @pet.sex %>
+    <%= @pet.age %>
+    <%= @pet.breed %>
+    <%= @pet.size %>
+
+    <br>
+
+    <h3>Description</h3>
+    <%= @pet.description %>
+
+		<br>
+
+    <h3>Shelter Information:</h3>
+    <%= @pet.address1 %> <%= @pet.address2 %> <%= @pet.city %>, FL <%= @pet.zip %>
+    <%= @pet.phone %>
+    <%= @pet.email %>
+    
+
+  </section>
+</div>

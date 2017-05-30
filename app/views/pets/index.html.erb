@@ -6,7 +6,7 @@
     	<%= pet.name %>
     	<%= pet.sex %>
     	<%= pet.age %>
-      <%= link_to "Pet Details", '/pets/details' %>
+    	<%= link_to "Pet Details", "pets/#{pet.id}" %>
     </p>
   <% end %>
 

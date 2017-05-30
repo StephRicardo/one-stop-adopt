@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170529202127) do
+ActiveRecord::Schema.define(version: 20170530000034) do
 
   create_table "pets", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20170529202127) do
     t.integer "pet_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "is_liked"
     t.index ["pet_id"], name: "index_selected_pets_on_pet_id"
     t.index ["user_id"], name: "index_selected_pets_on_user_id"
   end
