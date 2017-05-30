@@ -16,6 +16,10 @@ Rails.application.routes.draw do
 
   get '/pets' => 'pets#index'
   get '/pets/:id' => 'pets#show'
+
+  get '/pets/:id/like' => 'pets#like', as: :like
+  get '/pets/:id/dislike' => 'pets#dislike', as: :dislike
+
   
   resources :users
 

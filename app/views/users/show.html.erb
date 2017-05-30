@@ -8,3 +8,10 @@
     </section>
   </aside>
 </div>
+
+<div>
+	<% current_user.selected_pets.each do | spet | %>
+		<%= spet.pet.name %>
+	<% end %>
+
+</div>
