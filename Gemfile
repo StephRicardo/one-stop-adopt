@@ -6,12 +6,17 @@ git_source(:github) do |repo_name|
 end
 
 gem "font-awesome-rails"
+gem 'therubyrhino'
+gem 'less-rails-bootstrap'
+gem 'hirb'
+
 gem 'httparty', '~> 0.15.5'
+
 gem "rails-erd", :group => :development
 gem 'jquery-rails', '~> 4.3.1'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '3.1.11'
-gem 'bootstrap-sass', '3.3.6'
+# gem 'bootstrap-sass', '3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
 
@@ -22,7 +27,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
