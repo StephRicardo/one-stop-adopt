@@ -6,11 +6,6 @@ class PetsController < ApplicationController
 
 	def show
 		@pet = Pet.find(params[:id])
-		# if @pet
-		# 	redirect to(@pet)
-		# else
-		# 	render "@pets"
-		# end
 	end
  
 end
