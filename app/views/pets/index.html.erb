@@ -3,7 +3,6 @@
 	<% @pets.each do |pet| %>
     <p>
   		<%= image_tag("#{pet.photo}", :size => "250x250", :crop => :fill) %>
-    	<%= pet.name %>
     	<%= pet.sex %>
     	<%= pet.age %>
     	<%= link_to "Pet Details", "pets/#{pet.id}" %>
