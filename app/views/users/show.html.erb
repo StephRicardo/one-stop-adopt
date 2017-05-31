@@ -1,20 +1,27 @@
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.first_name %> <%= @user.last_name %>
-      </h1>
-    </section>
-  </aside>
-</div>
+<div class="main-container">
+  <div class="row">
+    <!-- <aside class="col-md-4"> -->
+    <aside >
+      <section class="user_info">
+        <h2>
+          <%= gravatar_for @user %>
+          <%= @user.first_name %> <%= @user.last_name %>
+        </h2>
+        <br>
+      </section>
+    </aside>
+  </div>
 
-<div>
-	<h3>Your Future Friends</h3>
-	<% current_user.selected_pets.each do | spet | %>
-		<%= image_tag("#{spet.pet.photo}", :size => "250x250", :crop => :fill) %>
-		<%= spet.pet.name %>
-		<a href="#">Pet Details</a>
-	<% end %> 
+  <h3>Your Future Friends</h3>
+  <br>
 
+  <div class="well bs-component" id="pet-flex">
+      <br>
+        <% current_user.selected_pets.each do | spet | %>
+      		<span><%= image_tag("#{spet.pet.photo}", :size => "200x200", :crop => :fill, :class => "animal-pic") %>
+          <h4><a href="#" class="pet-link"><%= spet.pet.name %></a></h4>  
+          </span>
+      	<% end %> 
+      <br> 
+  </div>
 </div>
