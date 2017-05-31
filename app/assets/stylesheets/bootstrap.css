@@ -7045,3 +7045,20 @@ a.list-group-item-danger.active:focus {
 .pet-link{
   padding-left: 4em;
 }
+
+#pet-index-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 2em;
+  margin-bottom: 4em;
+}
+
+#pet-details{
+  padding-bottom: 5em;
+  text-align: center;
+}
+
+
