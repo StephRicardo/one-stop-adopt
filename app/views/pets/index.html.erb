@@ -8,7 +8,7 @@
     	<%= pet.age %>
     	<%= link_to "Pet Details", "pets/#{pet.id}" %>
       <%= link_to like_path(pet.id) do %>
-        <i class="fa fa-heart" aria-hidden="true" style="color:<%#= current_user.selected_pets.find_by(pet_id: pet.id).is_liked ? "red" : "blue" %>"></i>
+        <i class="fa fa-heart" aria-hidden="true"></i>
       <% end %>
     	
     </p>

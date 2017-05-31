@@ -10,8 +10,11 @@
 </div>
 
 <div>
+	<h3>Your Future Friends</h3>
 	<% current_user.selected_pets.each do | spet | %>
+		<%= image_tag("#{spet.pet.photo}", :size => "250x250", :crop => :fill) %>
 		<%= spet.pet.name %>
-	<% end %>
+		<a href="#">Pet Details</a>
+	<% end %> 
 
 </div>

@@ -25,7 +25,7 @@ class PetsController < ApplicationController
 	# 	@pet = Pet.find(params[:id])
 	# 	@pet.is_liked = false
 	# 	redirect_to pets_path
-	end
+	# end
 
 	private
 
