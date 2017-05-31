@@ -1,33 +1,40 @@
-<h1>Pet Details</h1>
+<div class="main-container">
+  <h1>Pet Details</h1>
+  <br>
+    <div class="well bs-component">
+      <section class="user_info">
+        <h2><%= @pet.name %></h2>
+        <br>
+        	<%= image_tag("#{@pet.photo}", :size => "250x250", :crop => :fill, :class => "animal-pic") %>
 
-<div class="row">
-  <section class="user_info">
-    <h2>
-    	<%= image_tag("#{@pet.photo}", :size => "500x500", :crop => :fill) %>
-      <%= @pet.name %>
-    </h2>
+      </section>
 
-  </section>
+      <section>
+        <br>
+      	<h4>Pet Details</h4>
+      	<strong>Gender:</strong> <%= @pet.sex %><br>
+        <strong>Age:</strong> <%= @pet.age %><br>
+        <strong>Breed:</strong> <%= @pet.breed %><br>
+        <strong>Size:</strong> <%= @pet.size %>
 
-  <section>
-  	<h3>Pet Details</h3>
-  	<%= @pet.sex %>
-    <%= @pet.age %>
-    <%= @pet.breed %>
-    <%= @pet.size %>
+        <br>
+        <br>
 
-    <br>
+        <h4>Description</h4>
+        <%= @pet.description %>
 
-    <h3>Description</h3>
-    <%= @pet.description %>
+    		<br>
+        <br>
 
-		<br>
+        <h4>Shelter Information:</h4>
+        <%= @pet.address1 %> <%= @pet.address2 %> <%= @pet.city %>, FL <%= @pet.zip %>
+        <br>
+        <%= @pet.phone %>
+        <br>
+        <%= @pet.email %>
+        
 
-    <h3>Shelter Information:</h3>
-    <%= @pet.address1 %> <%= @pet.address2 %> <%= @pet.city %>, FL <%= @pet.zip %>
-    <%= @pet.phone %>
-    <%= @pet.email %>
-    
+      </section>
+    </div>
 
-  </section>
 </div>

@@ -8,17 +8,26 @@
         <p>
       		<%= image_tag("#{pet.photo}", :size => "250x250", :crop => :fill, :class => "animal-pic") %>
         	<br>
-          <span id="pet-details">
+          <span class="pet-details">
+
             <%= pet.name %> <%= link_to like_path(pet.id) do %>
               <i class="fa fa-heart" aria-hidden="true"></i>
             <% end %>
+            </span>
             <br>
-          	<strong>Gender:</strong> <%= pet.sex %>
+            <span class="pet-details">
+          	   <strong>Gender:</strong> <%= pet.sex %>
+            </span>
             <br>
-          	<strong>Age:</strong> <%= pet.age %>
+            <span class="pet-details">
+          	   <strong>Age:</strong> <%= pet.age %>
+            </span>
             <br>
-          	<%= link_to "Pet Details", "pets/#{pet.id}" %>
+            <span class="pet-details">
+          	   <%= link_to "Pet Details", "pets/#{pet.id}" %>
+            </span>
           </span>
+
         </p>
       <% end %>
   </div>

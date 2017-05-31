@@ -7056,9 +7056,37 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 4em;
 }
 
-#pet-details{
-  padding-bottom: 5em;
+.pet-details{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 5em;
   text-align: center;
 }
 
+.developers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+}
 
+.devpic{
+  max-height: 250px;
+  max-width: 250px;
+  border-radius: 3%;
+}
+
+#welcome-div{
+  width: 100%;
+  height: 35em;
+  margin-top: 4em;
+  background-image: url("/black-lab.jpeg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#welcome{
+  color: #ffffff;
+}
