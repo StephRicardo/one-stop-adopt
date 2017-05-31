@@ -7066,7 +7066,13 @@ a.list-group-item-danger.active:focus {
 .developers{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
+  justify-content: space-around;  
+}
+
+.wellness-pets{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
 }
 
 .devpic{
@@ -7085,6 +7091,8 @@ a.list-group-item-danger.active:focus {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  border-bottom-right-radius: 2%;
+  border-bottom-left-radius: 2%;
 }
 
 #welcome{
